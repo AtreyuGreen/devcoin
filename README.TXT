@@ -9,3 +9,8 @@ npm install elliptic --save
 
 #Instalamos mocha, es para test.
 npm install mocha --save
+
+#Instalamos Express para la website
+npm install express --save
+npm install express-generator --save
+npm install ejs --save 
