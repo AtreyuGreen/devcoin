@@ -1,0 +1,213 @@
+<!--<p><%= data.message %></p>-->
+
+<!-- Begin Page Header-->
+<div class="row">
+    <div class="page-header">
+        <div class="d-flex align-items-center">
+            <h2 class="page-header-title">Master Node View</h2>
+            <div>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="db-all.html"><i class="ti ti-home"></i></a></li>
+                    <li class="breadcrumb-item active">Master Node</li>
+                </ul>
+            </div>	                            
+        </div>
+    </div>
+</div>
+<!-- End Page Header -->
+<!-- Begin Row -->
+<div class="row flex-row">
+    <div class="col-xl-12 col-12">
+        <div class="widget has-shadow">
+            <div class="widget-body">
+                <div class="row flex-row">
+                    <div class="col-xl-6 col-6">
+                        <span style="margin-top:15px;">NODE: <%= data.nodeid %></span>
+                    </div>
+                    <div class="col-xl-6 col-6" style="text-align: right;">
+                        <span>
+                            <button class="btn" type="button" title="Pause node" onclick="window.location.href='init?status=false'" style="background-color:transparent"><i class="ti ti-control-pause la-2x text-primary"></i></button>
+                            <button class="btn" type="button" title="Create new account" style="background-color:transparent"><i class="ti ti-wallet la-2x text-primary"></i></button>
+                        </span>
+                    </div>                    
+                </div>
+                <div class="row flex-row">
+                    <div class="table-responsive">
+                        <table id="sorting-table" class="table mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Hash</th>
+                                    <th>From</th>
+                                    <th>To</th>
+                                    <th>Value</th>
+                                    <th>Fee</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                                <tr>
+                                    <td><span class="text-primary">0x3c11f3c2...</span></td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td>0x3c11f3c2...</td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
+                                    <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
