@@ -1,6 +1,5 @@
 const { BlockChain } = require('./blockchain');
 const fs = require('fs');
-const { Block } = require('./blocks');
 
 class MaterNode{
     /**

@@ -40,9 +40,24 @@ class BlockChain{
      * @returns Las últimas transacciones.
      */ 
     getLastTransactions(number){
-        if(number < this.chain.length)
-            return this.chain;
-        return this.chain.slice(Math.max(this.chain - number, 1));
+        let transactions = [];
+        let iTx = 0;
+
+        for(const block of this.chain.reverse()){
+            if(iTx >= number) break;
+            for(const trans of block.transactions){
+                if(iTx < number)
+                {
+                    transactions.push(trans);
+                    iTx++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+        return transactions;
     }
 
     /**

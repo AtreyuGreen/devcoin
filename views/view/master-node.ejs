@@ -22,7 +22,7 @@
             <div class="widget-body">
                 <div class="row flex-row">
                     <div class="col-xl-6 col-6">
-                        <span style="margin-top:15px;">NODE: <%= data.nodeid %></span>
+                        <span style="margin-top:15px;">NODE: <%= data.id %></span>
                     </div>
                     <div class="col-xl-6 col-6" style="text-align: right;">
                         <span>
@@ -31,28 +31,28 @@
                         </span>
                     </div>                    
                 </div>
-                <%= data.blocks %>
-                <% if (data.blocks > 0) { %>
+
+                <% if (data.blocks.length > 0) { %>
                 <div class="row flex-row">
                     <div class="table-responsive">
                         <table id="sorting-table" class="table mb-0">
                             <thead>
                                 <tr>
-                                    <th>Hash</th>
                                     <th>From</th>
                                     <th>To</th>
                                     <th>Value</th>
-                                    <th>Fee</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                    <% for(var index=0; index < data.blocks; index++ ){ %>
+                                    <% for(var index=0; index < data.blocks.length; index++ ){ %>
                                         <tr>
-                                            <td><span class="text-primary">data</span></td>
-                                            <td>0x3c11f3c2...</td>
-                                            <td>0x3c11f3c2...</td>
-                                            <td><span style="width:100px;"><span class="badge-text badge-text-small info">10</span></span></td>
-                                            <td><span style="width:100px;"><span class="badge-text badge-text-small info">200</span></span></td>
+                                            <% if (data.blocks[index].fromAddress  != null) { %>
+                                                <td><%= data.blocks[index].fromAddress.substring(0, 25)+"..." %></td>
+                                            <% } else { %>
+                                                <td><span style="width:100px;"><span class="badge-text badge-text-small success">Rewards</span></td>
+                                            <% } %>
+                                            <td><%= data.blocks[index].toAddress.substring(0, 25)+"..." %></td>
+                                            <td><span style="width:100px;"><span class="badge-text badge-text-small info"><%= data.blocks[index].amount %></span></span></td>
                                         </tr>
                                     <% } %>
                             </tbody>
