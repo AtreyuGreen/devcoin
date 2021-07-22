@@ -35,6 +35,17 @@ class BlockChain{
     }
 
     /**
+     * Devolverá las últimas transacciones que tiene una blockchain.
+     * @param {int} number - Es el número de transacciones que queremos devolver.
+     * @returns Las últimas transacciones.
+     */ 
+    getLastTransactions(number){
+        if(number < this.chain.length)
+            return this.chain;
+        return this.chain.slice(Math.max(this.chain - number, 1));
+    }
+
+    /**
      * Minará todas las transacciones pendientes y creará una nueva transacción de recompensa.
      * Esta transacción, será una transacción donde la dirección From será null.
      * @param {string} miningRewardAddress - Es la dirección de recompensa. 

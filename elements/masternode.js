@@ -1,5 +1,6 @@
 const { BlockChain } = require('./blockchain');
 const fs = require('fs');
+const { Block } = require('./blocks');
 
 class MaterNode{
     /**
@@ -8,7 +9,8 @@ class MaterNode{
      * @param {int} difficulty - Es el número de ceros con el comienza el hash del bloque para que sea válido.
      */ 
     constructor(){
-        this.pathIPCFile = "./ipc/node.ipc"
+        this.pathIPCFile = "./ipc/node.ipc";
+        this.BlockChain = new BlockChain();
     }
 
     /**
@@ -28,7 +30,8 @@ class MaterNode{
     getInfo(){
         return {
             running: this.isRunning(),
-            id: '99827-11342-90000-86754'
+            id: '99827-11342-90000-86754',
+            blocks: this.BlockChain.getLastTransactions(100)
         }
     }
 
